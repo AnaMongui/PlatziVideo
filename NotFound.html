@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>No found</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap"rel="stylesheet">
+</head>
+
+<style>
+    body{
+        margin: 0px;
+        font-family: 'Muli', sans-serif;
+    }
+
+    /*............................................. Header  ............................................*/
+    .header{
+        background-color: #21C08B;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__img{
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    /*............................................. Main  ............................................*/
+    .main{
+        background: linear-gradient(#21C08B, #AB88FF);
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main__title{
+        color: white;
+        font-size: 80px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main__subtitle {
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    /* __________________________ title animated _________________________*/
+    
+    .main__animated {
+        animation-duration: 2.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-name: hinge;
+    }
+
+    @keyframes hinge {
+        0% {transform: rotate(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+        20%, 60% {transform: rotate(80deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+        40% {transform: rotate(60deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+        80% {transform: rotate(60deg) translateY(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+        100% {transform: translateY(700px);}
+    }
+
+    /*............................................. Footer  ............................................*/
+    .footer {
+        background:#AB88FF;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+    }
+    .footer a {
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+    .footera:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <img class="header__img"src="./iconos/logo.png"alt="">
+    </header>
+
+    <section class="main">
+        <div class="main__animated">
+            <h2class="main__title">404</h2>      
+        </div>
+        <p class="main__subtitle" >Página no encontrada</p>  
+    </section>
+
+    <footer class="footer">
+        <a href="/">Términos de uso</a>
+        <a href="/">Declaración de privacida</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+
+</body>
+</html>```
